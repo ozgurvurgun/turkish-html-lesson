@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML LESSON</title>   <!-- title başlık tag idir, sekmede görünecek yazıyı bu tag e yazarız.  -->
+</head>
+<body style="padding: 5px ;">
+    <a name="return"></a>  <!-- BU LİNKİ ÇAPA OLARAK KULLANDIK  -->
+    <h1 style="text-align:center;color:orange">Özgür Vurgun Html Lessons</h1>
+    <h4 style="text-align:center;color:palevioletred">Bilgisayardan inceliyorsan ctrl+u tuşlayıp kaynak kodlarda ki açıklama satırlarından faydalanabilirsin. </h4>
+    <h4 style="text-align:center;color:palevioletred"> Sağ tık yapıp incele diyerek, hem kaynak kodları hem sayfayı aynı anda görüntüleyebilirsin. </h4>
+    <h4 style="text-align:center;color:palevioletred">Mobilden veya tabletten inceliyorsan sayfanın linkinin başına view-source: yazıp kaynak kodları görebilirsin. </h4>
+    <h4 style="text-align:center;color:palevioletred">Çizgi ile ayrılmış her bir alan farklı bir bilgidir. Lütfen kaynak kodlardan açıklama satırlarını inceleyin. </h4>
+
+    <!--
+        Web tasarım konusunda araştırma yapan hemen herkesin karşına çıkan temel kavram HTMLdir.
+         Web sayfalarını oluşturma aşamasında kullanılan standart bir metin işaret dili olan HTML açılımı “Hyper Text Markup Language” olarak bilinir.
+         Genel bilinen yanlış kanının aksine HTML bir programlama dili değildir.
+         Daha açık anlatmak gerekirse, Chrome, Firefox, Yandex gibi tarayıcıların okuyup anlamlandırdığı dil HTML dilidir.
+
+         Bir editör kullanmak html yazmanızı kolaylaştırır. (vs code, sublimetext, dw ...) Fakat bir not defteri programı bile html yazmanız için yeterlidir.
+         En sade hali html i anlatacak olursak. 3 tag den bahsetmemiz gerekir.
+
+
+
+         <html>
+           <head>
+   
+           </head>
+               <body>
+
+
+               </body>
+         </html>
+
+
+         
+         Dikkat edin her tag açılıp kapatılıyor.
+         Giriş seviyesinde! Bu yapıyı kullanıp, içerisine bu sayfada yer alan, html taglarını konumlandırıp içeriklerinizi yazabilirsiniz.
+
+         bütün taglari, içeriği html tag i sarmalar.
+         title, meta taglar, kütüphane tanımlamalarının çoğunu vs head tagı içerisine yazarız.
+         bir web sayfasına girdiğimizde gördüğümüz her şey body tag i içerisinde yer alır. Kullanıcılara göstermek istediğimiz her şeyi body tag i
+         içine yazarız.
+
+         Gördüğünüz gibi html oldukça basittir. Nihayetinde genel olarak body tag i içerisinde olursunuz ve bu ders sayfasında ki çoğu tag body içerisi tag laridir.
+
+         !!  Sayfa da bazı tag larin aynı işi yaptığını göreceksiniz. Bunun anlamı yüksek ihtimalle, taglarden birinin eski html sürümünün bir parçası
+         olmasıdır. Bunları araştırıp yeni olan kodları kullanmanızı tavsiye ederim. !!
+
+
+        İçerikleriniz sadece html kullanımıyla göze pek hitap etmeyecektir. Html ile genel hatlarıyla 
+        işimiz bittikten sonra, css ile içeriklerimizi düzenleyip daha şık olmasını sağlayacağız.
+        Ardından javascript ile sayfamızı daha hareketli kullanıcı dostu yapıp. Php ile sayfamızı
+        dahada dinamik hale getireceğiz.
+
+    -->
+
+
+    <hr color="red">
+
+    <h1>h1</h1> <!-- ( header )  en büyük başlık  -->
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6> <!-- en küçük başlık  -->
+
+
+    <hr> <!-- ( horizontal line ) alt çizgi atar  -->
+
+
+    <b>b tag</b>  <!-- ( bold )  metni kalınlaştırır -->
+
+
+    <hr>
+
+    <strong>strong tag</strong>   <!-- metni kalınlaştırır -->
+
+
+    <hr>
+
+
+    <br/>  <!-- ( break )  ALT SATIRA GEÇİRİR  -->
+
+
+    <hr>
+
+
+    <p>p tag</p>  <!-- PARAGRAF -->
+
+
+    <hr>
+
+
+    <em>em tag</em>  <!-- ( emphasize )  METNİ İTALİK YAPAR -->
+
+
+    <hr>
+
+
+    <i>i tag</i>  <!-- ( italic )  METNİ İTALİK YAPAR -->
+
+
+    <hr>
+
+
+    <big>big tag</big>   <!-- BÜYÜK METİN -->
+
+
+    <hr>
+
+
+    <small>small tag</small>   <!-- KÜÇÜK METİN -->
+
+
+    <hr>
+
+
+    <ul type="">  <!--  ( unorder list ) DAĞINIK LİSTE  type= disc, circle, square ( square default olarak gelir. )  -->
+
+       <li>one</li>  <!--  ( list )   -->
+       <li>two</li>
+       <li>three</li>
+
+    </ul>
+
+
+    <hr>
+
+
+    <ol type="">  <!--  ( order list ) DÜZENLİ LİSTE  type= 1, a, A, i, I  ( 1 default olarak gelir. ) -->
+        <li>one</li>  <!--  ( list )   -->
+        <li>two</li>
+        <li>three</li>
+    </ol>
+
+
+    <hr>
+
+
+    <table width="40%" border="1" cellpadding="10" cellspacing="5">
+        <caption style="padding: 25px ;">Başlık</caption>
+        <thead>  <!-- ( table head ) -->
+           <tr> <!-- ( table row ) -->
+              <th>thead sütun 1</th>
+              <th>thead sütun 2</th>        <!-- BİR TH SİLDİK DİYELİM, SÜTUNLARDA BOŞLUK OLMAMASI İÇİN TH YE colspan="2" DEĞERİ VERİP SÜTUNLARI BİRLEŞTİREBİLİRSİNİZ. --> 
+              <th>thead sütun 3</th>         <!-- align="center, left, right " kodunu istediğiniz etki alanının tagine yazıp yaslama yapabilirsiniz. --> 
+           </tr>
+        </thead> 
+        <tbody>  <!-- ( table body ) -->   
+           <tr>
+              <td>tbody sütun 1</td>
+              <td>tbody sütun 2</td>        <!-- HEAD ALANINDA TH BODY VE FOOTER ALANINDA TD KULLANILIR. --> 
+              <td>tbody sütun 3</td>
+          </tr>
+        </tbody>
+        <tfoot>  <!-- ( table foot ) --> 
+            <tr>
+              <td>tfoot sütun 1</td>
+              <td>tfoot sütun 2</td>
+              <td>tfoot sütun 3</td>
+            </tr>
+
+        </tfoot>
+    </table>
+
+
+    <hr>
+
+
+    <p><a href="https://www.ozgurvrgn.xyz/" target="_blank" title="ÖZGÜR VURGUN WEBSITE">a TAG İLE WEB SİTEME GİT</a></p>    <!-- ( ancher ) a TAG İNİN href NİTELİĞİNE LİNK VERİP CLİK İLE O LİNKE YÖNLENEBİLİRİZ. WEB SAYFAMIZIN SAYFALARI ARASINDA GEZMEK İÇİN SAYFA ADLARIDA LİNK OLARAK VERİLEBİLİR  --> 
+    <p><a href="file-and-photos/DB.pdf" title="ECZANE DB İNDİR" target="_blank">ECZANE VERİ TABANI İNDİR</a></p>    <!-- BU ŞEKİLDE DOSYA LİNKİ VERİP İSTEMCİLERİN İNDİRMESİNİ SAĞLAYABİLİRSİNİZ. --> 
+    <p><a href="mailto:ozgurvurgun1@gmail.com" title="ÖZGÜR VURGUN EMAİL">BANA EMAİL GÖNDER</a></p>    <!-- BU ŞEKİLDE LİNK NİTELİĞİNE EMAİL ADRESİ GİRERSENİZ, CİHAZDAKİ VARSAYILAN EMAİL UYGULAMASI href TE BULUNAN E POSTA ADRESİNE POSTA GÖNDERECEK ŞEKİLDE AÇILACAKTIR.  --> 
+                                                                                                      <!-- title NİTELİĞİNİ KULLANDIĞINIZDA LİNKİN ÜZERİNE GELDİĞİNİZDE YAZDIĞINIZ METİN BİR KUTUCUKTA GÖRÜNÜR. TİTLE KULLANIMI SEARCH ENGINE OPTIMIZATION İÇİN İYİDİR.  --> 
+
+    <hr>
+
+
+   <p><a href="#return">YUKARI ÇIK</a></p>   <!-- LİNKE DİYEZ İŞARETİ İLE BİR YOL VERİP BİR BAŞKA YERDE BİR LİNK DAHA OLUŞTURUP NAME DEĞERİNE AYNI YOLU VERİRSEK, CLİK DURUMUNDA SAYFA ORAYA YÖNLENİR. --> 
+
+
+   <hr>
+
+
+   <img style="height:250px;width: 250px;" src="file-and-photos/yazilim.jpg" alt="FOTOĞRAF" title="YAZILIM FOTOĞRAF" border="4">   <!-- BU KOD BLOĞU İLE FOTOĞRAF ÇIKTILAYABİLİRİZ. src NİTELİĞİNE GÖRSELİN YOLUNU, alt NİTELİĞİNE GÖRESELİN BULUNAMAMASI HALİNDE ÇIKTILANACAK METNİ GİRERİZ. alt kullanımı SEO İÇİN İYİDİR.  -->  
+   
+   
+   <hr>
+
+
+   <p title="ÖZGÜR" id="ozgurID"> id KULLANIMI</p>   <!-- CSS VE JAVASCRİPT İLE HTML E ERİŞMEK İÇİN, ELEMENTLERE id LER verebiliriz. id LER BENZERSİZ OLMALIDIR. --> 
+
+
+   <hr>
+
+
+   <center>center tag İLE ORTALANMIŞ İÇERİK
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ex minus soluta molestias ea officiis obcaecati facilis dolores eum animi.</p>
+
+   </center>   <!-- İÇERİĞİ ORTALAMAK İÇİN İÇERİĞİMİZİ center TAG LARİ İÇİNE ALABİLİRİZ. --> 
+
+
+   <hr>
+
+
+   <p>(pre tag siz İSTİKLAL MARŞI) 
+    Korkma, sönmez bu şafaklarda yüzen al sancak;
+    Sönmeden yurdumun üstünde tüten en son ocak.
+    O benim milletimin yıldızıdır, parlayacak;
+    O benimdir, o benim milletimindir ancak.               <!-- BİZ ENTER YAPIP BİR ALT SATIRA GEÇSEKTE BUNUN KOD DİZİMSEL ANLAMDA ÇOĞU ZAMAN BİR ANLAMI YOKTUR ( HTML özelinde bunu söylüyorum ). O YÜZDEN METİN YAN YANA ÇIKTILANIR. --> 
+    Çatma, kurban olayım çehreni ey nazlı hilâl!
+    Kahraman ırkıma bir gül… ne bu şiddet bu celâl?
+    Sana olmaz dökülen kanlarımız sonra helâl,
+    Hakkıdır, Hakk’a tapan, milletimin istiklâl.
+   </p>
+
+
+   <hr>
+
+
+   <pre>
+    (pre tag li İSTİKLAL MARŞI)
+    Korkma, sönmez bu şafaklarda yüzen al sancak;
+    Sönmeden yurdumun üstünde tüten en son ocak.
+    O benim milletimin yıldızıdır, parlayacak;
+    O benimdir, o benim milletimindir ancak.               <!-- PRE TAGLARİ ENTER LARİ ALGILAR VE İSTEDİĞİMİZ ÇIKTILARI DAHA ŞIK ALMAMIZI SAĞLAR. --> 
+    Çatma, kurban olayım çehreni ey nazlı hilâl!
+    Kahraman ırkıma bir gül… ne bu şiddet bu celâl?
+    Sana olmaz dökülen kanlarımız sonra helâl,
+    Hakkıdır, Hakk’a tapan, milletimin istiklâl.
+   </pre>
+
+
+   <hr>
+
+
+   <address>address tag caddesi. address tag sk. no: 1 daire: 1</address>   <!-- BU TAG İLE ADRES BİLGİLERİNİ ÇIKTILAYABİLİRİZ. HEM SEO AÇISINDAN İYİDİR HEM DE ÇIKTI DAHA ŞIK OLUR.--> 
+
+
+   <hr>
+
+
+   <blockquote>
+    ( blockquote tag kullanılmış içerik ) 
+    Korkma, sönmez bu şafaklarda yüzen al sancak;
+    Sönmeden yurdumun üstünde tüten en son ocak.
+    O benim milletimin yıldızıdır, parlayacak;
+    O benimdir, o benim milletimindir ancak.               <!-- ALINTILARI BU KOD BLOĞU ARASINA YAZABİLRİZ --> 
+    Çatma, kurban olayım çehreni ey nazlı hilâl!
+    Kahraman ırkıma bir gül… ne bu şiddet bu celâl?
+    Sana olmaz dökülen kanlarımız sonra helâl,
+    Hakkıdır, Hakk’a tapan, milletimin istiklâl. 
+    ( MEHMET AKİF ERSOY )
+   </blockquote>
+
+
+   <hr>
+
+
+   <cite>cite tag &nbsp;&nbsp;&nbsp;&nbsp; www.ozgurvrgn.xyz</cite>&nbsp;&nbsp;tüm hakları saklıdır   <!-- SİTE İSİMLERİNİ BU TAG ARASINA YAZABİLİRİZ. GÖRSEL AÇIDAN İYİDİR  --> 
+
+
+   <hr>
+
+
+   <code>php, html, python, c#, go, c++, kotlin, javascript</code>  <!-- YAZILIM DİLLERİNİ VEYA İSTEDİĞİNİZ METİNLERİ BU TAGLAR ARASINDA DAHA ŞIK ÇIKTILAYABİLİRSİNİZ. --> 
+
+
+   <hr>
+
+
+   <del>200</del> <--del tag  |  ins tag-->   <ins>85.99 TL</ins>  <!-- del TAGLARİ ARASINDA Kİ METİNLERİN ÜSTÜ ÇİZİLİR.  ins TAG İ ARASINDA Kİ METİNLERİN ALTI ÇİZİLİR. --> 
+
+
+    <hr>
+
+
+    <abbr title="TÜRKİYE BÜYÜK MİLLET MECLİSİ">TBMM</abbr>   <!-- abbr TAG LARİ ARASINA KISALTMALARI YAZARIZ. title NİTELİĞİNE KISALTMANIN UZUN HALİNİ YAZARIZ. ZİYARETÇİ TBMM ÜZERİNE GELDİĞİNDE KUTUDA KISALTMANIN UZUN HALİNİ GÖRÜR.--> 
+
+
+    <hr>
+
+
+    MARK TAG <mark> KULLANIMI</mark>   <!-- BU TAG ARASINA YAZILAN METİNLER VURGULANIR. --> 
+
+
+    <hr>
+
+
+    <meter value="0.8" style="height: 50px;width: 200px;" min="" max="">0.8 %80 doluluğu ifade eder  </meter> 
+    <!-- meter tagi, yüklenme oranı gösteren bir çubuk çıktılar. Yüklenme oranını value niteliğine yazarız. İstersek min max değerlerini tanımlayıp istediğimiz sayısal artanlarla çubuğun doluluk oranını ayarlayabiliriz.  --> 
+    <!-- Kullanım alanından bahsedecek olursak, mesela C: ve D: disklerimiz vardır ve bunların kapasitelerini ve kalan alanlarını bildirmek istiyoruzdur -->   
+
+    <hr>
+
+
+  <p> Özgür Vurgun : <q>Bir dönem için fedakarlıkta bulunmaktan aciz olanlar, hayatları boyunca sefalet içinde yaşar.</q></p>     <!-- ( quote ) Alıntılama yapmak için bu tagi kullanabilirsiniz. Arasına alınan metni tırnak içerisine alır. -->      
+  
+  
+  <hr>
+
+
+  <p><s>350.99  ( s tag )</s> yerine sadece 349 lira </p>  <!-- s tagi içerisine yazılan içeriğin üzerini çizer  del tagi da bu işi yapar -->    
+  
+  
+  <hr>
+
+
+  <p><samp>404 error not found ( samp tag )</samp></p>   <!-- bilgisayar çıktısı formunda çıktı almak için samp tagi kullanılabilir.-->    
+
+
+  <hr>
+
+
+  <p>Özgür Vurgun <span style="color:red ;font-size: 25px;"> HTML NOTLARI</span></p>   <!-- Bir metin içerisinde veya farklı yapılarda, spesifik bir alanda değişiklik yapmak için o kısmı span ile sarıp sadece o alanda oynamalar yapabiliriz. -->    
+
+
+  <hr>
+
+
+  <p><var>var tag ile yazılmış metin</var></p>   <!-- Bu tag arasına yazılan metinsel ifadeler italic fontta çıktılanır. -->    
+
+
+  <hr>
+
+
+  <p>11001<sub>2</sub></p>     <!-- sub tag ile text i alta alabilirsiniz. Bunu genelde matematiksel ifadeler için kullanırız. -->    
+
+
+  <hr>
+
+
+  <p> 10<sup>5</sup> ,&nbsp; m<sup>2</sup></p>   <!-- sup tag ile text i üste alabiliriz. Bunu genelde matematiksel ifadeler için kullanırız. Ayrıca html de satır içi boşluk vermek için &nbsp; ifadesini kullanırız.-->   
+
+  
+  <hr>
+
+
+  <form name="" id="" method="GET" action="#">                                                        <!-- Form oluşturmak için öncelikle form tagini açarız ve form elemanlarımızı form taglari içine yazarız. -->  
+     <p> <input type="text" name="username" id="username" required  maxlength="10" placeholder="kullanıcı adı" > </p>   <!-- İnputlar veri giriş hücereleridir buralara girdiğimiz verileri bir çok şekilde işleyip yönlendirmeler yapabiliriz. -->  
+     <p> <input type="password" name="password" id="username" placeholder="parola"> </p>           <!-- type niteliklerine inputun tipini hangi amaçla kullanılacığını, hangi veri tipini almak istedğimizi belirtiriz. -->  
+     <p> <input type="email" name="email" id="username" placeholder="email"> </p>                  <!-- name niteliği php kodlaması yaparken işimize yarayacak. Global değişkenlerle inputlardaki veriyi yakalarken name değerlerine ihtiyaç duyarız. -->  
+     <p> <input type="hidden" value="123456"> </p>                                                 <!-- id niteliğine java script ve css kodlaması yaparken ihtiyaç duyarız genel olarak.-->  
+     <p> <input type="url" name="url" id="url" placeholder="URL gir"> </p>                         <!-- placeholder niteliğini yazarsak, inputun içinde silik şekilde verdğimiz değer görünür. Son kullanıcının kullanımı kolaylaştırmak açısından yer verilebilir. -->     
+     <p> <input type="tel" name="tel" placeholder="Tel No"> </p>                                   <!-- onclik="alert('Hello Javascript');" bu bir javascript kodlamasıdır. Burada ki olay, inputa tıklandığında tarayıcı tepede bir mesaj çıktılar. -->  
+     <p> <input type="search" placeholder="Arama"> </p>                                            <!-- autocomplete="off" bu niteliği off yaparsak inputlarda ki  veriler otomatik doldurulmaz. --> 
+     <p><textarea name="text" id="text" cols="30" rows="8" placeholder="Mesajınızı Giriniz."></textarea> </p>  <!-- text area lar uzun metin girdileri için kullanılır. Genelde kullanıcılardan mesaj, istek almak maksadı ile kullanılır. -->  
+     <p> 
+        <label for="kofte">
+        <input type="checkbox" value="0" name="check" id="kofte"> KÖFTE                            <!-- check box larla kullanıcıya birden fazla seçim yaptırabiliriz. Örenğin aşağıdaki yemeklerden hangileri ilginizi çekiyor gibisinden bir kurgu ile kullanılabilir. -->  
+        </label>                                                                                   <!-- Kullanıcının giriş birimini boş geçmesini istemiyorsak inputa required niteliği veririz.-->  
+        <label for="patates">
+        <input type="checkbox" value="1" name="check" id="patates"> PATATES                        <!-- label for= değeri ile  input id= değerlerini aynı girerseniz, labela tıklandığında inputa tıklanmış olur. -->  
+        </label>     
+    </p>
+    <p> 
+        <label for="mantwo">                                        
+        <input type="radio" value="0" name="checktwo" id="mantwo"> BAY                              <!-- kullanıcıya bir kaç seçim arasından bir tek seçim yaptırmak istediğimizde radio button lari kullanırız. Burada dikkat edilmesi gereken şey radio inputların name değerlerinin aynı olmasıdır. Aksi halde kullanıcı birden fazla seçim yapabilir.-->  
+        </label>
+        <label for="womantwo">
+        <input type="radio" value="1" name="checktwo" id="womantwo"> BAYAN
+        </label>
+    </p>
+    <p>
+        <select name="" id="">                                     
+            <option value="HTML" selected>SEÇİM YAPINIZ</option>
+             <option value="HTML">HTML</option>                     
+             <option value="CSS">CSS</option>                                                       <!-- Burada ki yapı ile dropdown list şeklinde kullanıcıya seçim yaptırabiliriz. Default olarak gelen değeri ayarlamak için option açılış tag ine selected yazarız. -->  
+             <option value="SWİFT">SWİFT</option>                                                   <!-- value niteliklerine girilen bilgilerin kullanımına örnek verecek olursak, örneğin HMTL seçimi yaptık diyelim. o halde HTML in value değerini veri tabanına çekebiliriz. -->  
+             <option value="KOTLIN">KOTLIN</option>
+             <option value="PYTHON">PYTHON</option>
+        </select>
+    </p>
+        
+      <input type="submit" value="Send">        <!-- submit tipi formda ki  veriyi sunucya göndermek için kullanılır. -->  
+      <input type="button" value="button">      <!-- button tipini ajax isteklerinde kullanırız.  -->  
+      <input type="reset">                      <!-- reset tipini formda ki veriyi komple silmek için kullanırız. -->  
+  </form>                                       <!-- formların method, action vs nitelileri vardır. Oralara girmiyorum araştırabilirsiniz. -->  
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+</body>
+</html>
